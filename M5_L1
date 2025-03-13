@@ -1,0 +1,42 @@
+// 1 Masala
+
+import math 
+
+def orta_arif(a, b):  
+    return (a + b) / 2  
+
+def orta_geom(a, b):
+    return math.sqrt(a * b)  
+
+a, b = map(int, input().split())  # Read two space-separated integers
+
+arifmetik = orta_arif(a, b)
+geometrik = orta_geom(a, b)
+
+if arifmetik > geometrik:
+    print(">")
+elif arifmetik < geometrik:
+    print("<")
+else:
+    print("=")
+
+
+// 2 Masala
+
+matchsticks = [6, 2, 5, 5, 4, 5, 6, 3, 7, 6] 
+
+N = input().strip()  
+
+total_matches = sum(matchsticks[int(digit)] for digit in N)  
+print(total_matches)
+
+// 3 Masala 
+
+
+
+
+// 4 Masala def f(x):
+return x**5 + 8*x**4 - 5*x**3 + 3*x**2 + x - 12
+
+n = int(input().strip())  
+print(f(n))  
